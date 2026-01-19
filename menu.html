@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Sarhang Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header >
+        <a href="index.html" class="logo">SARHANG</a>
+        <button class="mobile-toggle">☰</button>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            🛒 <span class="cart-badge">0</span>
+        </div>
+    </header>
+
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="close-cart">✕</span>
+        </div>
+        <div class="cart-items">
+            <p style="text-align: center; color: #666;">Your cart is empty.</p>
+        </div>
+        <button class="btn" style="width: 100%; margin-top: 16px;">Checkout</button>
+    </div>
+
+    <section>
+        <h2>Our Menu</h2>
+        
+        <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="mezze">Mezze</button>
+            <button class="filter-btn" data-filter="grill">Grill</button>
+            <button class="filter-btn" data-filter="mains">Mains</button>
+            <button class="filter-btn" data-filter="drinks">Drinks</button>
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+        </div>
+
+        <div class="menu-grid">
+            <div class="menu-card" data-category="mezze">
+                <img src="download.jpg" alt="Hummus">
+                <div class="menu-card-content">
+                    <h3>Hummus Bil Tahin</h3>
+                    <p>Creamy chickpeas with tahin</p>
+                    <span class="price">FREE</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card" data-category="mezze">
+                <img src="download (1).jpg" alt="Dollma">
+                <div class="menu-card-content">
+                    <h3>Dollma</h3>
+                    <p>Vine leaves stuffed with rice</p>
+                    <span class="price">250 IQ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="grill">
+                <img src="download (2).jpg" alt="Mixed Grill">
+                <div class="menu-card-content">
+                    <h3>Mixed Grill</h3>
+                    <p>Selection of finest grilled meats</p>
+                    <span class="price">25000 IQ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card" data-category="grill">
+                <img src="4.jpg" alt="Lamb Chops">
+                <div class="menu-card-content">
+                    <h3>Lamb Chops</h3>
+                    <p>Tender marinated lamb chops</p>
+                    <span class="price">20000 IQ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card" data-category="grill">
+                <img src="5.jpg" alt="Kfta">
+                <div class="menu-card-content">
+                    <h3>Kfta</h3>
+                    <p>Spiced ground meat skewers</p>
+                    <span class="price">4000 IQ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card" data-category="grill">
+                <img src="6.jpg" alt="Chicken Shish">
+                <div class="menu-card-content">
+                    <h3>Chicken Shish</h3>
+                    <p>Grilled chicken breast cubes</p>
+                    <span class="price">5000 IQ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="mains">
+                <img src="7.jpg" alt="Kubba ">
+                <div class="menu-card-content">
+                    <h3>Kubba</h3>
+                    <p>Sour dumpling soup</p>
+                    <span class="price">6000 IQ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card" data-category="mains">
+                <img src="8.jpg" alt="Quzi ">
+                <div class="menu-card-content">
+                    <h3>Quzi </h3>
+                    <p>Slow cooked lamb with rice</p>
+                    <span class="price">15000 IQ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="drinks">
+                <img src="9.jpg" alt="Dooh">
+                <div class="menu-card-content">
+                    <h3>Dooh</h3>
+                    <p>Refreshing yogurt drink</p>
+                    <span class="price">500 IQ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card" data-category="drinks">
+                <img src="10.jpg" alt="Sharbaty hnar">
+                <div class="menu-card-content">
+                    <h3>Sharbaty hnar</h3>
+                    <p>Pomegranate juice</p>
+                    <span class="price">1000 IQ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                <img src="11.jpg" alt="paqlawa">
+                <div class="menu-card-content">
+                    <h3>paqlawa</h3>
+                    <p>Layered pastry with nuts</p>
+                    <span class="price">3000 IQ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card" data-category="desserts">
+                <img src="12.jpg" alt="Kwnafeh">
+                <div class="menu-card-content">
+                    <h3>Kwnafeh</h3>
+                    <p>Cheese pastry soaked in syrup</p>
+                    <span class="price">1500 IQ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card" data-category="desserts">
+                <img src="13.jpg" alt="Zlwbia">
+                <div class="menu-card-content">
+                    <h3>Zlwbia</h3>
+                    <p>Deep fried funnel cake</p>
+                    <span class="price">1000 IQ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-card" data-category="desserts">
+                <img src="14.jpg" alt="kurdish Coffee">
+                <div class="menu-card-content">
+                    <h3>kurdish Coffee</h3>
+                    <p>Strong traditional coffee</p>
+                    <span class="price">2000 IQ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div  class="menu-card" data-category="desserts">
+                <img src="15.jpg" alt="Chokllet Kaik" >
+                <div class="menu-card-content">
+                    <h3>Chokllet Kaik</h3>
+                    <p>Spiced milk tea</p>
+                    <span class="price">2000 IQ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sarhang Restaurant. All rights reserved.</p>
+        <p>60 Meter St, SULAIMANI ... +964 772 254 9500</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

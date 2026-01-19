@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Sarhang Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header >
+        <a href="index.html" class="logo">SARHANG</a>
+        <button class="mobile-toggle">☰</button>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reservations.html" class="active">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            🛒 <span class="cart-badge">0</span>
+        </div>
+    </header>
+
+    <div class="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="close-cart">✕</span>
+        </div>
+        <div class="cart-items">
+            <p style="text-align: center; color: #666;">Your cart is empty.</p>
+        </div>
+        <button class="btn" style="width: 100%; margin-top: 16px;">Checkout</button>
+    </div>
+
+    <section>
+        <h2>Book a Table</h2>
+        <div class="form-container">
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Time</label>
+                    <input type="hidden" id="time-input" required>
+                    <div class="slots-grid">
+                        <div class="time-slot">6:00 PM</div>
+                        <div class="time-slot">7:00 PM</div>
+                        <div class="time-slot">8:00 PM</div>
+                        <div class="time-slot">9:00 PM</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guests" required>
+                        <option value="">Select Guests</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6+ People</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Confirm Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="popup">
+        <div class="popup-content">
+            <h2 style="color: #d4a574; margin-bottom: 16px;">Success!</h2>
+            <p>Your table has been reserved.</p>
+            <p>We look forward to seeing you.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sarhang Restaurant. All rights reserved.</p>
+        <p>60 Meter St, SULAIMANI ... +964 772 254 9500</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
